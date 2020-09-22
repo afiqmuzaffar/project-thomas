@@ -1,4 +1,7 @@
 # project-thomas
+
+![project-thomas banner](project-thomas.jpg)
+
 Welcome to project-thomas! This is a chatbot written in 100% pure Java. It relies on Apache's OpenNLP and MongoDB to provide its core functionality. project-thomas was designed from the ground up to be library making it easy to deploy as a desktop app *(See [thomas-client](https://github.com/mxtt-mmxix/thomas-client))*, web app, command-line utility, or whatever suits your needs.
 
 ## How it works
