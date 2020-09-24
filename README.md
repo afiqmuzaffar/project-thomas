@@ -7,11 +7,13 @@ Welcome to project-thomas! This is a chatbot written in 100% pure Java. It relie
 ## How it works
 Essentially, project-thomas takes in a sentence. It analyzes that sentence and catogorizes it. It will respond to the user with the appropriate data, or update its database based on the context of the sentence.
 
+**Note:** project-thomas requires you to supply your own datasets. You can use [these](http://opennlp.sourceforge.net/models-1.5/) to get started.
+
 ## How to use it
 1. Install [Apache Maven](https://maven.apache.org/download.cgi).
 2. Clone this repository.
 3. Navigate to folder where you cloned it.
-4. Run `mvn clean install` to install project-thomas to your local repository
+4. Run `mvn clean install` to install project-thomas to your local repository.
 5. Add the following to your pom.xml in your project. (If you want a live demo instead see [thomas-client](https://github.com/mxtt-mmxix/thomas-client))
 ```xml
 <dependency>
