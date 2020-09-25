@@ -44,18 +44,18 @@ public class ThomasDB {
         init();
     }
 
-    public ThomasDB(ConnectionString address) {
+    public ThomasDB(final ConnectionString address) {
         mongoClient = MongoClients.create(address);
         init();
     }
 
-    public ThomasDB(String hostname) {
+    public ThomasDB(final String hostname) {
         mongoClient = MongoClients.create(MongoClientSettings.builder()
                 .applyToClusterSettings(builder -> builder.hosts(Arrays.asList(new ServerAddress(hostname)))).build());
         init();
     }
 
-    public boolean initDB(String hostname, int port) {
+    public boolean initDB(final String hostname, int port) {
         mongoClient = MongoClients.create(MongoClientSettings.builder()
                 .applyToClusterSettings(builder -> builder.hosts(Arrays.asList(new ServerAddress(hostname, port))))
                 .build());
@@ -67,7 +67,4 @@ public class ThomasDB {
 
     }
 
-    public void log(final String message) {
-        System.out.println(message);
-    }
 }
