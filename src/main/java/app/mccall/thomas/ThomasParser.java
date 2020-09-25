@@ -18,10 +18,9 @@ public class ThomasParser {
     private Parser parser;
     private Parse[] parse;
 
-    public ThomasParser(final String dataset) {
-
+    public ThomasParser(final String model) {
         try {
-            parserModelInputStream = new FileInputStream(dataset);
+            parserModelInputStream = new FileInputStream(model);
             parserModel = new ParserModel(parserModelInputStream);
             parser = ParserFactory.create(parserModel);
         } catch (IOException e) {
